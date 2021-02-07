@@ -1,16 +1,16 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
+  //   box-sizing: border-box;
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   color: $grayishBlue;
@@ -27,4 +27,5 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
+  color: $veryDarkBlue;
 }
