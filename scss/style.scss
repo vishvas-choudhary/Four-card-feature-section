@@ -1,0 +1,28 @@
+@import "variable";
+@import "mixin";
+@import "global";
+
+.main {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 9rem 16rem 8rem;
+}
+
+.header {
+  text-align: center;
+
+  .heading--light {
+    font-weight: 200;
+  }
+
+  .heading--dark {
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    max-width: 59rem;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    margin-bottom: 6.5rem;
+  }
+}

@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: #a3a5ae;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 3.8rem;
+  color: #4c4e61;
+}
+
+@media (max-width: 639px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+.main {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 9rem 16rem 8rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.header .heading--light {
+  font-weight: 200;
+}
+
+.header .heading--dark {
+  margin-bottom: 2.5rem;
+}
+
+.header p {
+  max-width: 59rem;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  margin-bottom: 6.5rem;
+}
+/*# sourceMappingURL=style.css.map */

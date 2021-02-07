@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: $grayishBlue;
+  background-color: $veryLightGray;
+}
+
+h1 {
+  font-size: 3.8rem;
+  color: $veryDarkBlue;
+  @include breakpoint-down(small) {
+    font-size: 2.6rem;
+  }
+}
+
+h2 {
+  font-size: 2.2rem;
+}
