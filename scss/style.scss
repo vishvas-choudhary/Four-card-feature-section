@@ -6,6 +6,10 @@
   max-width: 144rem;
   margin: 0 auto;
   padding: 9rem 16rem 8rem;
+
+  @include breakpoint-down(small) {
+    padding: 9rem 3rem 8rem;
+  }
 }
 
 .header {
@@ -17,6 +21,10 @@
 
   .heading--dark {
     margin-bottom: 2.5rem;
+
+    @include breakpoint-down(small) {
+      margin-bottom: 2.2rem;
+    }
   }
 
   &__p {
@@ -24,6 +32,10 @@
     margin: 0 auto;
     font-size: 1.8rem;
     margin-bottom: 6.5rem;
+
+    @include breakpoint-down(small) {
+      margin-bottom: 7.5rem;
+    }
   }
 }
 
@@ -34,15 +46,36 @@
   justify-content: space-between;
   align-items: center;
 
+  @include breakpoint-down(small) {
+    display: block;
+    margin: 0 auto;
+  }
+
   .card {
     max-width: 35rem;
     padding: 3rem;
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0px 10px 16px rgba($color: $veryDarkBlue, $alpha: 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
-    &:not(:last-child) {
-      margin-right: 3rem;
+    &:hover {
+      transform: translateY(0.5rem);
+      box-shadow: 0px 5px 16px rgba($color: $veryDarkBlue, $alpha: 0.2);
+    }
+
+    @include breakpoint-down(medium) {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .col-2 {
+    @include breakpoint-down(medium) {
+      display: block;
+      margin: 0 auto;
     }
   }
 
@@ -72,5 +105,9 @@
   img {
     display: block;
     margin-left: auto;
+
+    @include breakpoint-down(small) {
+      width: 6rem;
+    }
   }
 }
